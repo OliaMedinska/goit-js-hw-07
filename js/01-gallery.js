@@ -26,7 +26,7 @@ function onImgCardClick(e) {
 const instance = basicLightbox.create(`
     <img src="${e.target.dataset.sourse}" width="800" height="600" />`,
     {
-        onOpen: () => document.addEventListener('keydown', onCloseModal),
+        onShow: () => document.addEventListener('keydown', onCloseModal),
         onClose: () => document.removeEventListener('keydown', onCloseModal),
     }
 );

@@ -9,7 +9,7 @@ gallery.innerHTML = galleryItems.map(({ preview, original, description }) =>
         </a>`
     ).join('');
 
-var lightbox = new SimpleLightbox('.gallery a', { 
+const lightbox = new SimpleLightbox('.gallery a', { 
     captionType: 'attr',
     captionsData: 'alt',
     captionDelay: 250,
